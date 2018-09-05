@@ -19,6 +19,7 @@ public class Catalogo extends JFrame implements ActionListener {
         JLabel Montura=new JLabel("Montura");
         JLabel Aspecto=new JLabel("Aspecto");
         JLabel Escudo=new JLabel("Escudo");
+        JLabel Personaje=new JLabel("Personaje");
         
         JLabel img1=new JLabel();
         JLabel img2=new JLabel();
@@ -38,7 +39,8 @@ public class Catalogo extends JFrame implements ActionListener {
         Container c=getContentPane();
         c.setLayout(null);
         this.getContentPane().setBackground(Color.darkGray);
-                
+           
+        
         c.add(b);
         c.add(b2);
         c.add(b3);
@@ -46,6 +48,7 @@ public class Catalogo extends JFrame implements ActionListener {
         c.add(Montura);
         c.add(Escudo);
         c.add(Aspecto);
+        c.add(Personaje);
         c.add(img1);
         c.add(img2);
         c.add(img3);
@@ -62,7 +65,6 @@ public class Catalogo extends JFrame implements ActionListener {
         b3.setBounds(130, 350, 100, 35);
         b3.setBackground(Color.CYAN);
         
-        
         Arma.setBounds(300, 50, 100, 20);
         Arma.setForeground(Color.WHITE);
         Arma.setFont(new java.awt.Font("ALGERIAN", 1, 20));
@@ -75,7 +77,10 @@ public class Catalogo extends JFrame implements ActionListener {
         Montura.setBounds(500, 270, 100, 20);
         Montura.setForeground(Color.WHITE);
         Montura.setFont(new java.awt.Font("ALGERIAN", 1, 20));
-        
+        Personaje.setBounds(5, 205, 150, 20);
+        Personaje.setForeground(Color.red);
+        Personaje.setFont(new java.awt.Font("ALGERIAN", 1, 20));
+        Personaje.setBackground(Color.cyan);
     }
     
     
